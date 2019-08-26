@@ -15,6 +15,7 @@
             -date and time (formatted using moment)
             -display the artist searched for
            ![image]( /Users/PenelopeArnold/Desktop/Screen Shot 2019-08-25 at 9.56.32 PM.png)
+           Format: ![Alt Text](url)
             
  -spotify-this
  using the spotify API this allows the user to search for a song and recieve the following information:
@@ -23,6 +24,7 @@
             -proview link from spotify 
             -album 
            ( /Users/PenelopeArnold/Desktop/Screen Shot 2019-08-25 at 10.07.17 PM.png)
+           Format: ![Alt Text](url)
             
  -movie-this
     using OMDB allows the user to search a specific movie and recieve the following information
@@ -35,8 +37,10 @@
             -acors 
             -summary of the plot
              ![image](/Users/PenelopeArnold/Desktop/Screen Shot 2019-08-25 at 9.55.48 PM.png)
+             Format: ![Alt Text](url)
             
  -do-what-it-says
     reads external file, takes in the command and allows the information to be viewed in the terminal
 
  ![image](/Users/PenelopeArnold/Desktop/Screen Shot 2019-08-25 at 9.54.58 PM.png)
+ Format: ![Alt Text](url)
