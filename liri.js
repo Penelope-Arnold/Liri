@@ -17,15 +17,15 @@ console.log(userSearch);
 function runLiri(){
 switch(userSearch){
     case "concert-this":
-        concertThis();
+        concertThis(parameter);
     break;
 
     case "spotify-this-song":
-        spotifyThis();
+        spotifyThis(parameter);
     break;
 
     case "movie-this":
-        movieThis();
+        movieThis(parameter);
     break;
 
     case "do-what-it-says":
@@ -43,8 +43,9 @@ switch(userSearch){
 
 //name of venue, location, date/time using moment 
 
-function concertThis(err, response, body){
-    var artist = process.argv[3]
+function concertThis(parameter){
+    // var artist = process.argv[3]
+    var artist = parameter
     console.log(artist);
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(
   function(res) {
@@ -60,7 +61,7 @@ function concertThis(err, response, body){
 }
 
 //spotify
-function spotifyThis(parameter, songSearch){
+function spotifyThis(parameter){
 var songSearch;
 if(parameter === undefined){
     songSearch = "Ripple"
@@ -87,8 +88,8 @@ spotify.search({ type: 'track', query: songSearch }, function(err, data) {
 //movie * Title of the movie. Year the movie came out.IMDB Rating of the movie.Rotten Tomatoes Rating of the movie.
 //Country where the movie was produced.Language of the movie.Plot of the movie. Actors in the movie.
 
-function movieThis(){
-    var movieName = process.argv[3]
+function movieThis(parameter){
+    var movieName = parameter
     console.log(movieName)
     axios.get("http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy").then(
         function(response){
